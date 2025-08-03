@@ -1,16 +1,16 @@
 project "Box2D"
-  kind "StaticLib"
+	kind "StaticLib"
 	language "C++"
 	cppdialect "C++17"
 	staticruntime "off"
-
-  targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin/intermediate/" .. outputdir .. "/%{prj.name}")
 
   files
   	{
   		"src/**.h",
   		"src/**.cpp",
+		"src/**.c",
   		"include/**.h"
   	}
   
